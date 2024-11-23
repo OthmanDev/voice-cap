@@ -1,0 +1,65 @@
+<template>
+  <header class="border-b border-border-100 bg-white-100">
+    <div class="flex items-center justify-between h-[56px] px-6">
+      <h1 class="text-xl font-bold text-heading-100">{{ title }}</h1>
+      <div class="flex items-center gap-2">
+        <div class="relative z-[1001]">
+          <img
+            @click="isMenuOpen = !isMenuOpen"
+            src="https://demos.pixinvent.com/vuexy-vuejs-admin-template/demo-1/images/avatars/avatar-1.png"
+            loading="lazy"
+            alt="User"
+            class="w-[40px] h-[40px] rounded-full cursor-pointer"
+          />
+          <span
+            class="w-[12px] h-[12px] bg-white-100 absolute rounded-full bottom-0 right-0 flex items-center justify-center"
+          >
+            <span class="w-[6px] h-[6px] bg-success-100 rounded-full"></span>
+          </span>
+          <div
+            v-if="isMenuOpen"
+            class="absolute right-0 border border-border-100 rounded-md bg-white-100 z-10 top-full mt-1 w-[200px]"
+          >
+            <div class="p-3 grid gap-4">
+              <RouterLink
+                :to="{ name: 'account' }"
+                class="text-heading-100 flex items-center gap-2 transition-all hover:text-primary-100 rounded-md"
+              >
+                <span><user-icon class="w-[23px] h-[23px]" /></span>
+                <span class="flex-1 pt-[3px] font-medium">My Profile</span>
+              </RouterLink>
+              <div
+                class="text-heading-100 flex items-center gap-2 transition-all hover:text-primary-100 rounded-md cursor-pointer"
+              >
+                <span><sign-out-icon class="w-[23px] h-[23px]" /></span>
+                <span class="flex-1 pt-[3px] font-medium">Sign Out</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div v-if="isMenuOpen" class="fixed inset-0 z-[1000]" @click="isMenuOpen = false"></div>
+      </div>
+    </div>
+  </header>
+</template>
+
+<script>
+import UserIcon from '@/components/icons/UserIcon.vue'
+import SignOutIcon from '@/components/icons/SignOutIcon.vue'
+export default {
+  props: {
+    title: {
+      type: String,
+    },
+  },
+  components: {
+    UserIcon,
+    SignOutIcon,
+  },
+  data() {
+    return {
+      isMenuOpen: false,
+    }
+  },
+}
+</script>
