@@ -14,14 +14,21 @@
               :to="{ name: 'dashboard' }"
               class="text-heading-100 px-3 py-2 flex items-center gap-2 transition-all hover:text-primary-100 rounded-md"
             >
-              <dashboard-icon class="w-[23px] h-[23px]" />
+              <dashboard-icon class="w-[22px] h-[22px]" />
               <span class="flex-1 pt-[3px] font-medium">Dashboard</span>
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'agents' }"
+              class="text-heading-100 px-3 py-2 flex items-center gap-2 transition-all hover:text-primary-100 rounded-md"
+            >
+              <users-icon class="w-[22px] h-[22px]" />
+              <span class="flex-1 pt-[3px] font-medium">Agents</span>
             </RouterLink>
             <RouterLink
               :to="{ name: 'call-logs' }"
               class="text-heading-100 px-3 py-2 flex items-center gap-2 transition-all hover:text-primary-100 rounded-md"
             >
-              <calls-icon class="w-[23px] h-[23px]" />
+              <calls-icon class="w-[22px] h-[22px]" />
               <span class="flex-1 pt-[3px] font-medium">Call Logs</span>
             </RouterLink>
           </div>
@@ -37,10 +44,12 @@
 <script>
 import DashboardIcon from './components/icons/DashboardIcon.vue'
 import CallsIcon from './components/icons/CallsIcon.vue'
+import UsersIcon from './components/icons/UsersIcon.vue'
 export default {
   components: {
     DashboardIcon,
     CallsIcon,
+    UsersIcon,
   },
   data() {
     return {}
