@@ -60,8 +60,8 @@ export default {
       agents: [
         {
           id: 1,
-          name: 'Gymmy',
-          role: 'Articulate Americans',
+          name: 'Miles',
+          role: 'Rapid Rides Dispatch',
           phone: '+18142835142',
           avatar: {
             src: 'danny.png',
@@ -70,8 +70,8 @@ export default {
         },
         {
           id: 2,
-          name: 'Angela',
-          role: 'Articulate Americans',
+          name: 'Skye',
+          role: 'Rapid Rides Dispatch',
           phone: '+12142825542',
           avatar: {
             src: 'danny.png',
@@ -80,8 +80,8 @@ export default {
         },
         {
           id: 3,
-          name: 'Dave',
-          role: 'Articulate Americans',
+          name: 'Chase',
+          role: 'Rapid Rides Dispatch',
           phone: '+12142820921',
           avatar: {
             src: 'danny.png',

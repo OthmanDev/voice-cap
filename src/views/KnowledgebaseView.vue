@@ -70,19 +70,19 @@ export default {
       knowledgebases: [
         {
           id: 1,
-          name: 'Knowledge base 1',
+          name: 'Rates & Payments',
           status: 'Ready',
           date: '11/23/2024',
         },
         {
           id: 2,
-          name: 'Knowledge base 2',
+          name: 'FAQs & Policies',
           status: 'Ready',
           date: '11/22/2024',
         },
         {
           id: 3,
-          name: 'Knowledge base 3',
+          name: 'Driver & Vehicles',
           status: 'Ready',
           date: '11/21/2024',
         },

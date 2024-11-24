@@ -3,7 +3,7 @@
   <main class="p-6">
     <div class="border border-border-100 rounded-xl bg-white-100 p-6">
       <h2 class="capitalize text-heading-100 font-bold text-3xl">
-        Welcome back Othmane
+        Welcome back Greg
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="inline-flex h-8 w-8">
           <path
             fill="#fac036"
@@ -197,7 +197,7 @@
                 </div>
                 <div>
                   <h4 class="text-xl font-bold text-heading-100 mb-1 uppercase">78.5K</h4>
-                  <span class="text-[17px] capitalize font-medium">Appts. scheduled</span>
+                  <span class="text-[17px] capitalize font-medium">Jobs Booked</span>
                 </div>
               </div>
             </div>
@@ -322,8 +322,9 @@
           <div class="border-b border-border-100 p-4">
             <div class="flex items-center justify-between">
               <span class="text-xl font-bold text-heading-100">Call Logs</span>
-              <div class="w-[500px]">
-                <input type="search" class="form-field" placeholder="Enter search query" />
+              <div class="w-[500px] relative flex items-center">
+                <search-icon class="w-5 h-5 absolute left-4" />
+                <input type="search" class="form-field pl-11" placeholder="Enter search query" />
               </div>
             </div>
           </div>
@@ -508,6 +509,7 @@ import DoubleLeftIcon from '@/components/icons/DoubleLeftIcon.vue'
 import DoubleRightIcon from '@/components/icons/DoubleRightIcon.vue'
 import LeftIcon from '@/components/icons/LeftIcon.vue'
 import RightIcon from '@/components/icons/RightIcon.vue'
+import SearchIcon from '@/components/icons/SearchIcon.vue'
 export default {
   components: {
     Topbar,
@@ -530,6 +532,7 @@ export default {
     CustomSettingsIcon,
     SimpleCalendarIcon,
     DownIcon,
+    SearchIcon,
   },
   data() {
     return {

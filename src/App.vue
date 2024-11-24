@@ -43,7 +43,7 @@
               class="text-heading-100 px-3 py-2 flex items-center gap-2 transition-all hover:text-primary-100 rounded-md"
             >
               <knowledgebase-icon class="w-[22px] h-[22px]" />
-              <span class="flex-1 pt-[3px] font-medium">Knowledge Base </span>
+              <span class="flex-1 pt-[3px] font-medium">Knowledge Base</span>
             </RouterLink>
             <RouterLink
               :to="{ name: 'call-logs' }"
@@ -51,6 +51,13 @@
             >
               <calls-comming-icon class="w-[22px] h-[22px]" />
               <span class="flex-1 pt-[3px] font-medium">Call Logs</span>
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'voices' }"
+              class="text-heading-100 px-3 py-2 flex items-center gap-2 transition-all hover:text-primary-100 rounded-md"
+            >
+              <calls-comming-icon class="w-[22px] h-[22px]" />
+              <span class="flex-1 pt-[3px] font-medium">Voices</span>
             </RouterLink>
           </div>
         </div>
