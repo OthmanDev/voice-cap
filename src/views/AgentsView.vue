@@ -1,14 +1,14 @@
 <template>
   <Topbar :title="'Agents'"></Topbar>
   <main class="p-6">
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-3 gap-4 sm:grid-cols-2 xs:grid-cols-1">
       <div
         v-for="(agent, key) in agents"
         :key="key"
         class="border border-border-100 rounded-xl bg-white-100 p-4"
       >
-        <div class="flex justify-between">
-          <div class="flex flex-1 items-center gap-4">
+        <div class="flex justify-between xs:flex-col xs:gap-4">
+          <div class="flex flex-1 items-center gap-4 xs:flex-col xs:text-center">
             <div
               class="w-[75px] h-[75px] rounded-full overflow-hidden flex bg-opacity-50 items-center justify-center"
               :class="agent.avatar.color"
@@ -21,7 +21,7 @@
               <span class="text-[15px] font-medium">{{ agent.phone }}</span>
             </div>
           </div>
-          <div class="flex gap-1">
+          <div class="flex gap-1 xs:w-full xs:justify-center">
             <button
               class="w-[34px] h-[34px] border border-border-100 rounded-md flex items-center justify-center transition-all hover:bg-success-100 hover:bg-opacity-10 hover:border-success-100 hover:border-opacity-10 hover:text-success-100"
               title="Edit Agent"

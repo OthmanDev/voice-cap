@@ -33,6 +33,14 @@ export default {
         },
       },
     },
+    screens: {
+      '2xl': { max: '1450px' },
+      xl: { max: '1279px' },
+      lg: { max: '1023px' },
+      md: { max: '992px' },
+      sm: { max: '767px' },
+      xs: { max: '640px' },
+    },
   },
   plugins: [],
 }

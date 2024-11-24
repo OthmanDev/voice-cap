@@ -26,7 +26,7 @@
         <div class="border-b border-border-100 px-4 py-3">
           <div class="flex items-center justify-between">
             <span class="text-xl font-bold text-heading-100">{{ numbers.length }} Numbers</span>
-            <div class="w-[500px] relative flex items-center">
+            <div class="w-[500px] relative flex items-center xs:w-[200px]">
               <search-icon class="w-5 h-5 absolute left-4" />
               <input type="search" class="form-field pl-11" placeholder="Enter number to search" />
             </div>

@@ -1,14 +1,14 @@
 <template>
   <Topbar :title="'Voices'"></Topbar>
   <main class="p-6">
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-3 gap-4 sm:grid-cols-2 xs:grid-cols-1">
       <div
         v-for="(voice, key) in voices"
         :key="key"
         class="border border-border-100 rounded-xl bg-white-100 p-4"
       >
-        <div class="flex justify-between">
-          <div class="flex flex-1 items-center gap-4">
+        <div class="flex justify-between xs:flex-col xs:gap-4">
+          <div class="flex flex-1 items-center gap-4 xs:flex-col xs:text-center">
             <div
               class="w-[75px] h-[75px] rounded-full overflow-hidden flex bg-opacity-50 items-center justify-center"
               :class="voice.avatar.color"
@@ -25,7 +25,7 @@
               <span class="text-[15px] font-medium">{{ voice.phone }}</span>
             </div>
           </div>
-          <div class="flex gap-1">
+          <div class="flex xs:justify-center">
             <button
               v-if="!isPlaying(voice.name)"
               @click="playVoice(voice.name)"

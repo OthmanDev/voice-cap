@@ -1,8 +1,8 @@
 <template>
   <Topbar :title="'Call Logs'"></Topbar>
   <main class="p-6">
-    <div class="grid gap-6">
-      <div class="grid grid-cols-4 gap-4">
+    <div class="flex flex-col gap-6">
+      <div class="grid grid-cols-4 gap-4 sm:grid-cols-2 xs:grid-cols-1">
         <div class="border border-border-100 rounded-xl bg-white-100 p-4">
           <div class="flex items-center gap-4">
             <div
@@ -60,7 +60,7 @@
         <div class="border-b border-border-100 p-4">
           <div class="flex items-center justify-between">
             <span class="text-xl font-bold text-heading-100">Call Logs</span>
-            <div class="w-[500px] relative flex items-center">
+            <div class="w-[500px] relative flex items-center xs:w-[200px]">
               <search-icon class="w-5 h-5 absolute left-4" />
               <input type="search" class="form-field pl-11" placeholder="Enter search query" />
             </div>

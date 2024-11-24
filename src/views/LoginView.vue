@@ -1,8 +1,8 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center">
-    <div class="w-[500px]">
+  <div class="min-h-screen flex items-center justify-center px-4">
+    <div class="max-w-[500px]">
       <div class="text-center">
-        <h1 class="text-4xl font-bold text-heading-100 leading-normal mb-6">
+        <h1 class="text-4xl font-bold text-heading-100 leading-normal mb-6 xs:leading-[1.25]">
           Welcome back! Please <br />
           <span class="relative inline-flex"
             >Sign in
@@ -52,7 +52,7 @@
               </a>
             </div>
           </div>
-          <button type="button" class="button primary-button">Sign In</button>
+          <RouterLink :to="{ name: 'dashboard' }" class="button primary-button">Sign In</RouterLink>
           <div class="text-center font-medium">
             Don’t have an account?
             <a href="/accounts/signup" class="hover:text-primary-100 text-heading-100">Sign Up</a>

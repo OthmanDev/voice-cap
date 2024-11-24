@@ -1,7 +1,12 @@
 <template>
   <header class="border-b border-border-100 bg-white-100">
     <div class="flex items-center justify-between h-[56px] px-6">
-      <h1 class="text-xl font-bold text-heading-100">{{ title }}</h1>
+      <div class="flex items-center gap-3">
+        <span class="cursor-pointer text-heading-100 xl:flex hidden" @click="collapseSidebar">
+          <menu-right-icon class="w-[23px] h-[23px]" />
+        </span>
+        <h1 class="text-xl font-bold text-heading-100 leading-none mt-[2.5px]">{{ title }}</h1>
+      </div>
       <div class="flex items-center gap-2">
         <div class="relative z-[1001]">
           <img
@@ -46,6 +51,7 @@
 <script>
 import UserIcon from '@/components/icons/UserIcon.vue'
 import SignOutIcon from '@/components/icons/SignOutIcon.vue'
+import MenuRightIcon from '@/components/icons/MenuRightIcon.vue'
 export default {
   props: {
     title: {
@@ -55,11 +61,30 @@ export default {
   components: {
     UserIcon,
     SignOutIcon,
+    MenuRightIcon,
   },
   data() {
     return {
       isMenuOpen: false,
+      isCollapsed: false,
     }
+  },
+  mounted() {
+    window.addEventListener('isCollapsed', (event) => {
+      this.isCollapsed = event.detail.isCollapsed
+    })
+  },
+  methods: {
+    collapseSidebar() {
+      this.isCollapsed = !this.isCollapsed
+      window.dispatchEvent(
+        new CustomEvent('collapseSidebar', {
+          detail: {
+            isCollapsed: this.isCollapsed,
+          },
+        }),
+      )
+    },
   },
 }
 </script>

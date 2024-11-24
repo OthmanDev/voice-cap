@@ -4,7 +4,7 @@
     <div class="grid gap-6">
       <div class="border border-border-100 rounded-xl bg-white-100">
         <div class="border-b border-border-100 p-4">
-          <div class="flex items-center justify-between">
+          <div class="flex items-center justify-between xs:flex-col xs:gap-4">
             <div>
               <span class="text-xl font-bold text-heading-100 block mb-1"
                 >Custom API Integrations</span
@@ -14,21 +14,21 @@
                 your agent.
               </span>
             </div>
-            <button class="button primary-button">
+            <button class="button primary-button xs:w-full">
               <plus-icon class="w-4 h-4 mr-1.5" />
               Create API Integration
             </button>
           </div>
         </div>
         <div class="p-4">
-          <div class="grid grid-cols-3 gap-4">
+          <div class="grid grid-cols-3 gap-4 sm:grid-cols-2 xs:grid-cols-1">
             <div
               v-for="(skill, key) in customSkills"
               :key="key"
               class="border border-border-100 rounded-xl bg-white-100 p-4"
             >
-              <div class="flex justify-between">
-                <div class="flex flex-1 items-start gap-4">
+              <div class="flex justify-between xs:flex-col xs:gap-4">
+                <div class="flex flex-1 items-start gap-4 xs:flex-col xs:justify-center xs:items-center xs:text-center">
                   <div
                     class="w-[50px] h-[50px] rounded-full bg-primary-100 bg-opacity-10 text-primary-100 overflow-hidden flex items-center justify-center"
                   >
@@ -44,7 +44,7 @@
                     <span class="text-[15px] font-medium">Created: {{ skill.date }}</span>
                   </div>
                 </div>
-                <div class="flex">
+                <div class="flex xs:w-full xs:justify-center">
                   <button
                     class="w-[34px] h-[34px] border border-border-100 rounded-md flex items-center justify-center transition-all hover:bg-success-100 hover:bg-opacity-10 hover:border-success-100 hover:border-opacity-10 hover:text-success-100"
                     title="Edit Skill"
@@ -63,7 +63,7 @@
           <span>Choose your dispatch partner to configure curated skills</span>
         </div>
         <div class="p-4">
-          <div class="grid grid-cols-3 gap-4">
+          <div class="grid grid-cols-3 gap-4 sm:grid-cols-2 xs:grid-cols-1">
             <div
               v-for="(skill, key) in skills"
               :key="key"
@@ -97,7 +97,7 @@
                   />
                 </div>
                 <div class="flex-1">
-                  <h4 class="text-lg font-semibold text-heading-100 leading-none">
+                  <h4 class="text-lg font-semibold text-heading-100 leading-none mb-2">
                     {{ skill.name }}
                   </h4>
                   <div class="min-h-[180px]">
@@ -108,7 +108,7 @@
                     </ul>
                   </div>
                 </div>
-                <button class="button primary-button">
+                <button class="button primary-button xs:w-full">
                   {{ skill.name === 'TaxiCaller' ? 'Select TaxiCaller' : 'Select BookALimo' }}
                 </button>
               </div>

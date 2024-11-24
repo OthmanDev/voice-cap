@@ -1,7 +1,7 @@
 <template>
   <Topbar :title="'Integrations'"></Topbar>
   <main class="p-6">
-    <div class="grid grid-cols-4 gap-4">
+    <div class="grid grid-cols-4 gap-4 sm:grid-cols-2 xs:grid-cols-1">
       <div
         v-for="(app, key) in apps"
         :key="key"

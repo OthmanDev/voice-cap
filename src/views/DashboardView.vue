@@ -120,13 +120,13 @@
         @click="isActivePeriod = false"
       ></div>
     </div>
-    <div class="grid gap-6 mt-4">
+    <div class="flex flex-col gap-6 mt-4">
       <div class="rounded-xl bg-white-100 border border-border-100">
         <div class="border-b border-border-100 p-4">
           <h3 class="text-xl text-heading-100 font-bold">Calls</h3>
         </div>
         <div class="p-4">
-          <div class="grid grid-cols-3 gap-4">
+          <div class="grid grid-cols-3 gap-4 xs:grid-cols-1">
             <div class="border border-border-100 rounded-xl bg-white-100 p-4">
               <div class="flex items-center gap-4">
                 <div
@@ -174,7 +174,7 @@
           <h3 class="text-xl text-heading-100 font-bold">Actions</h3>
         </div>
         <div class="p-4">
-          <div class="grid grid-cols-5 gap-4">
+          <div class="grid grid-cols-5 gap-4 sm:grid-cols-3 xs:grid-cols-1">
             <div class="border border-border-100 rounded-xl bg-white-100 p-4">
               <div class="flex items-center gap-4">
                 <div
@@ -248,7 +248,7 @@
           <h3 class="text-xl text-heading-100 font-bold">Analysis</h3>
         </div>
         <div class="p-4">
-          <div class="grid grid-cols-5 gap-4">
+          <div class="grid grid-cols-5 gap-4 sm:grid-cols-3 xs:grid-cols-1">
             <div class="border border-border-100 rounded-xl bg-white-100 p-4">
               <div class="flex items-center gap-4">
                 <div
@@ -322,7 +322,7 @@
           <div class="border-b border-border-100 p-4">
             <div class="flex items-center justify-between">
               <span class="text-xl font-bold text-heading-100">Calls</span>
-              <div class="w-[500px] relative flex items-center">
+              <div class="w-[500px] relative flex items-center xs:w-[200px]">
                 <search-icon class="w-5 h-5 absolute left-4" />
                 <input type="search" class="form-field pl-11" placeholder="Enter search query" />
               </div>
