@@ -14,7 +14,7 @@
               :class="agent.avatar.color"
             >
               <img
-                src="@/assets/images/danny.png"
+                src="@/assets/img/danny.png"
                 :alt="agent.name"
                 class="w-full h-full object-cover"
               />
