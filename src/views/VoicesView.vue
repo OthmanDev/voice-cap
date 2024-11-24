@@ -148,28 +148,22 @@ export default {
     getAudioId(name) {
       return `audio-${name.toLowerCase()}`
     },
-
     getImagePath(filename) {
-      return `./src/assets/img/${filename}`
+      return `/img/${filename}`
     },
-
     getAudioPath(name) {
-      return `./src/assets/audios/${name.toLowerCase()}.mpga`
+      return `/audios/${name.toLowerCase()}.mpga`
     },
-
     isPlaying(name) {
       return this.currentlyPlaying === name.toLowerCase()
     },
-
     playVoice(name) {
       document.querySelectorAll('audio').forEach((audio) => {
         audio.pause()
         audio.currentTime = 0
       })
-
       const audioId = this.getAudioId(name)
       const audioElement = document.getElementById(audioId)
-
       if (audioElement) {
         audioElement.play().catch((error) => {
           console.error('Error playing audio:', error)
@@ -177,7 +171,6 @@ export default {
         this.currentlyPlaying = name.toLowerCase()
       }
     },
-
     pauseVoice() {
       document.querySelectorAll('audio').forEach((audio) => {
         audio.pause()
@@ -185,7 +178,6 @@ export default {
       })
       this.currentlyPlaying = null
     },
-
     handleAudioEnd() {
       this.currentlyPlaying = null
     },

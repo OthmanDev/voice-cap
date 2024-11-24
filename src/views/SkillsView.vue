@@ -91,7 +91,7 @@
                   </svg>
                   <img
                     v-if="skill.name === 'BookALimo'"
-                    src="@/assets/img/book-alimo.svg"
+                    src="/img/book-alimo.svg"
                     alt="BookALimo"
                     class="w-[35px]"
                   />
