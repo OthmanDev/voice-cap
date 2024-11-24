@@ -56,7 +56,7 @@
               :to="{ name: 'voices' }"
               class="text-heading-100 px-3 py-2 flex items-center gap-2 transition-all hover:text-primary-100 rounded-md"
             >
-              <calls-comming-icon class="w-[22px] h-[22px]" />
+              <voice-icon class="w-[22px] h-[22px]" />
               <span class="flex-1 pt-[3px] font-medium">Voices</span>
             </RouterLink>
           </div>
@@ -76,6 +76,7 @@ import UsersIcon from './components/icons/UsersIcon.vue'
 import CallsCommingIcon from '@/components/icons/CallsCommingIcon.vue'
 import SkillIcon from '@/components/icons/SkillIcon.vue'
 import KnowledgebaseIcon from '@/components/icons/KnowledgebaseIcon.vue'
+import VoiceIcon from '@/components/icons/VoiceIcon.vue'
 export default {
   components: {
     DashboardIcon,
@@ -84,6 +85,7 @@ export default {
     CallsCommingIcon,
     SkillIcon,
     KnowledgebaseIcon,
+    VoiceIcon,
   },
   data() {
     return {}
