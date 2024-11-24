@@ -5,7 +5,7 @@
       class="fixed top-0 left-0 z-[999] h-full w-[260px] bg-white-100 border-r border-border-100"
     >
       <div class="h-[60px] flex items-center px-6">
-        <RouterLink to="dashboard">Voiceship Calls</RouterLink>
+        <RouterLink to="dashboard">VoiceCab</RouterLink>
       </div>
       <div class="without-scrollbar overflow-y-auto">
         <div class="px-3">
