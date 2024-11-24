@@ -13,7 +13,7 @@
             @click="isMenuOpen = !isMenuOpen"
             src="https://demos.pixinvent.com/vuexy-vuejs-admin-template/demo-1/images/avatars/avatar-1.png"
             loading="lazy"
-            alt="User"
+            alt="Greg"
             class="w-[40px] h-[40px] rounded-full cursor-pointer"
           />
           <span

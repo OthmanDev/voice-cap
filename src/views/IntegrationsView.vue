@@ -8,10 +8,8 @@
         class="border border-border-100 rounded-xl bg-white-100 p-4"
       >
         <div class="flex flex-col justify-center text-center items-center gap-4">
-          <div
-            class="w-[75px] h-[75px] flex bg-opacity-50 items-center justify-center"
-          >
-            <img :src="getImagePath(app.src)" :alt="app.name" />
+          <div class="w-[75px] h-[75px] flex bg-opacity-50 items-center justify-center">
+            <img :src="getImagePath(app.src)" :alt="app.name" loading="lazy" />
           </div>
           <div class="flex-1">
             <h4 class="text-lg font-semibold text-heading-100 leading-none">{{ app.name }}</h4>

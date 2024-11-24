@@ -17,6 +17,7 @@
                 :src="getImagePath(voice.avatar.src)"
                 :alt="voice.name"
                 class="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div class="flex-1">

@@ -28,7 +28,9 @@
               class="border border-border-100 rounded-xl bg-white-100 p-4"
             >
               <div class="flex justify-between xs:flex-col xs:gap-4">
-                <div class="flex flex-1 items-start gap-4 xs:flex-col xs:justify-center xs:items-center xs:text-center">
+                <div
+                  class="flex flex-1 items-start gap-4 xs:flex-col xs:justify-center xs:items-center xs:text-center"
+                >
                   <div
                     class="w-[50px] h-[50px] rounded-full bg-primary-100 bg-opacity-10 text-primary-100 overflow-hidden flex items-center justify-center"
                   >
@@ -94,6 +96,7 @@
                     src="/img/book-alimo.svg"
                     alt="BookALimo"
                     class="w-[35px]"
+                    loading="lazy"
                   />
                 </div>
                 <div class="flex-1">

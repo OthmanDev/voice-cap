@@ -13,7 +13,12 @@
               class="w-[75px] h-[75px] rounded-full overflow-hidden flex bg-opacity-50 items-center justify-center"
               :class="agent.avatar.color"
             >
-              <img src="/img/danny.png" :alt="agent.name" class="w-full h-full object-cover" />
+              <img
+                src="/img/danny.png"
+                :alt="agent.name"
+                loading="lazy"
+                class="w-full h-full object-cover"
+              />
             </div>
             <div class="flex-1">
               <h4 class="text-lg font-semibold text-heading-100 leading-none">{{ agent.name }}</h4>
