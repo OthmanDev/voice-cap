@@ -6,7 +6,7 @@
         <div class="relative z-[1001]">
           <img
             @click="isMenuOpen = !isMenuOpen"
-            src="https://demos.pixinvent.com/vuexy-vuejs-admin-template/demo-1/img/avatars/avatar-1.png"
+            src="https://demos.pixinvent.com/vuexy-vuejs-admin-template/demo-1/images/avatars/avatar-1.png"
             loading="lazy"
             alt="User"
             class="w-[40px] h-[40px] rounded-full cursor-pointer"
