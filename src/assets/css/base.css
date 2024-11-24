@@ -35,7 +35,7 @@ html {
 }
 @layer components {
   .form-field {
-    @apply w-full h-11 rounded-md border bg-white-100 border-border-100 focus:ring-2 focus:ring-primary-100 px-4 py-2 focus:outline-none font-medium text-heading-100;
+    @apply w-full h-11 rounded-md border bg-white-100 border-border-100 focus:ring-2 focus:ring-primary-100 px-4 py-2 focus:outline-none font-medium text-heading-100 placeholder:text-[#484848] text-[15px];
   }
 }
 aside .router-link-active {

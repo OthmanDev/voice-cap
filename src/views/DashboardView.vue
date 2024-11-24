@@ -323,7 +323,7 @@
             <div class="flex items-center justify-between">
               <span class="text-xl font-bold text-heading-100">Call Logs</span>
               <div class="w-[500px]">
-                <input type="search" class="form-field" placeholder="Enter Search Query" />
+                <input type="search" class="form-field" placeholder="Enter search query" />
               </div>
             </div>
           </div>

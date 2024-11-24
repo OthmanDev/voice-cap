@@ -14,9 +14,24 @@ const router = createRouter({
       component: () => import('../views/CallLogsView.vue'),
     },
     {
+      path: '/phone-numbers',
+      name: 'phone-numbers',
+      component: () => import('../views/PhoneNumbersView.vue'),
+    },
+    {
       path: '/agents',
       name: 'agents',
       component: () => import('../views/AgentsView.vue'),
+    },
+    {
+      path: '/skills',
+      name: 'skills',
+      component: () => import('../views/SkillsView.vue'),
+    },
+    {
+      path: '/knowledgebase',
+      name: 'knowledgebase',
+      component: () => import('../views/KnowledgebaseView.vue'),
     },
     {
       path: '/login',
