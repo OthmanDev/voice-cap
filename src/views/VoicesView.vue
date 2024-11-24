@@ -150,11 +150,11 @@ export default {
     },
 
     getImagePath(filename) {
-      return `/src/assets/images/${filename}`
+      return `@/assets/images/${filename}`
     },
 
     getAudioPath(name) {
-      return `/src/assets/audios/${name.toLowerCase()}.mpga`
+      return `@/assets/audios/${name.toLowerCase()}.mpga`
     },
 
     isPlaying(name) {

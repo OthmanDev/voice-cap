@@ -321,7 +321,7 @@
         <div class="rounded-xl bg-white-100 border border-border-100">
           <div class="border-b border-border-100 p-4">
             <div class="flex items-center justify-between">
-              <span class="text-xl font-bold text-heading-100">Call Logs</span>
+              <span class="text-xl font-bold text-heading-100">Calls</span>
               <div class="w-[500px] relative flex items-center">
                 <search-icon class="w-5 h-5 absolute left-4" />
                 <input type="search" class="form-field pl-11" placeholder="Enter search query" />
