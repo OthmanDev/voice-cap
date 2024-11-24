@@ -13,11 +13,7 @@
               class="w-[75px] h-[75px] rounded-full overflow-hidden flex bg-opacity-50 items-center justify-center"
               :class="agent.avatar.color"
             >
-              <img
-                src="/img/danny.png"
-                :alt="agent.name"
-                class="w-full h-full object-cover"
-              />
+              <img src="/img/danny.png" :alt="agent.name" class="w-full h-full object-cover" />
             </div>
             <div class="flex-1">
               <h4 class="text-lg font-semibold text-heading-100 leading-none">{{ agent.name }}</h4>
@@ -71,7 +67,7 @@ export default {
         {
           id: 2,
           name: 'Skye',
-          role: 'Rapid Rides Dispatch',
+          role: 'Rapid Rides Customer Support',
           phone: '+12142825542',
           avatar: {
             src: 'danny.png',
@@ -81,7 +77,7 @@ export default {
         {
           id: 3,
           name: 'Chase',
-          role: 'Rapid Rides Dispatch',
+          role: 'Rapid Rides Billing',
           phone: '+12142820921',
           avatar: {
             src: 'danny.png',

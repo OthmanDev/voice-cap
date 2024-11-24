@@ -39,6 +39,16 @@ const router = createRouter({
       component: () => import('../views/VoicesView.vue'),
     },
     {
+      path: '/analysis',
+      name: 'analysis',
+      component: () => import('../views/AnalysisView.vue'),
+    },
+    {
+      path: '/integrations',
+      name: 'integrations',
+      component: () => import('../views/IntegrationsView.vue'),
+    },
+    {
       path: '/login',
       name: 'login',
       component: () => import('../views/LoginView.vue'),
